@@ -28,65 +28,69 @@ import org.testng.annotations.Test;
 
 import com.github.dockerjava.api.command.SaveImageCmd;
 import com.salesforce.base.BaseSalesForceClass;
+
 @Listeners(com.salesforce.utility.SalesforceListenerUtility.class)
 
 public class SalesforceRandomScenarios_Testcases extends BaseSalesForceClass {
-	protected Logger randomscenarioslog=LogManager.getLogger();
+	protected Logger randomscenarioslog = LogManager.getLogger();
 	String othertxt = null;
+
 	@Test
 	public void verifyAccountHolder() {
 		assertCurrentURL("https://login.salesforce.com/");
-	    randomscenarioslog.info("Current URL assertion passed");
+		randomscenarioslog.info("Current URL assertion passed");
 
 		initialSetup();
 		assertTitle("Home Page ~ Salesforce - Developer Edition");
-	    randomscenarioslog.info("Title assertion passed");
+		randomscenarioslog.info("Title assertion passed");
 
 		WebElement hometab = driver.findElement(By.id("home_Tab"));
 		clickbuttonAndAssert(hometab, " Home tab  ");
-	    randomscenarioslog.info("Clicked on Home tab");
+		randomscenarioslog.info("Clicked on Home tab");
 
 		WebElement username = driver.findElement(By.xpath("//span[@class='pageType']//a"));
 		String usernameLink = username.getText();
 		clickbuttonAndAssert(username, " User name   ");
-	    randomscenarioslog.info("Clicked on username link");
+		randomscenarioslog.info("Clicked on username link");
 
 		WebElement braedcrumbUsername = driver.findElement(By.xpath("//span[@id='tailBreadcrumbNode']"));
 		String usernamebreadcrumbtxt = braedcrumbUsername.getText();
 		clickbuttonAndAssert(braedcrumbUsername, " User name sees in breadcrumb  ");
 		assertStringsEqual(usernameLink, usernamebreadcrumbtxt);
-	    randomscenarioslog.info("Clicked on breadcrumb username link");
+		randomscenarioslog.info("Clicked on breadcrumb username link");
 
 		String currentURL1 = driver.getCurrentUrl();
 		WebElement userAccountbttn = driver.findElement(By.id("userNavLabel"));
 		waitForVisibilty(userAccountbttn, 40, "User account menu");
 		clickbuttonAndAssert(userAccountbttn, "user account ");
-	    randomscenarioslog.info("Clicked on UserAccount");
+		randomscenarioslog.info("Clicked on UserAccount");
 
 		WebElement myProfile = driver.findElement(By.xpath("//div[@id='userNav-menuItems']/a"));
 		waitForVisibilty(myProfile, 40, "User account menu");
 		clickbuttonAndAssert(myProfile, "user menu ");
-	    randomscenarioslog.info("Clicked on User Menu");
+		randomscenarioslog.info("Clicked on User Menu");
 
 		String currentURL2 = driver.getCurrentUrl();
 		assertStringsEqual(currentURL1, currentURL2);
-		
+		randomscenarioslog.info("All assertions Passed");
+		reportlog.logTestInfo("All assertions Passed");
 
 	}
+
 	@Test
 	public void verifylastnameEdit_Variousplace() {
 		initialSetup();
 		assertTitle("Home Page ~ Salesforce - Developer Edition");
-	    randomscenarioslog.info("Title assertion passed");
+		randomscenarioslog.info("Title assertion passed");
 
 		WebElement hometab = driver.findElement(By.id("home_Tab"));
 		clickbuttonAndAssert(hometab, " Home tab  ");
-	    randomscenarioslog.info("Clicked on Home tab");
-	    
+		randomscenarioslog.info("Clicked on Home tab");
+
 		WebElement username = driver.findElement(By.xpath("//span[@class='pageType']//a"));
 		String usernameLink = username.getText();
 		clickbuttonAndAssert(username, " User name   ");
-	    randomscenarioslog.info("Clicked on username link");
+		randomscenarioslog.info("Clicked on username link");
 
 		WebElement editBttn = driver
 				.findElement(By.xpath("//a[contains(@class, 'contactInfoLaunch') and contains(@class, 'editLink')]"));
@@ -109,39 +113,39 @@ public class SalesforceRandomScenarios_Testcases extends BaseSalesForceClass {
 		driver.switchTo().frame("contactInfoContentId");
 		WebElement emaifield = driver.findElement(By.name("email"));
 		emaifield.click();
-	    randomscenarioslog.info("Clicked on Email link");
+		randomscenarioslog.info("Clicked on Email link");
 
-assertEquals(emaifield, driver.switchTo().activeElement());
+		assertEquals(emaifield, driver.switchTo().activeElement());
 // eliminates redundancy and makes the code more efficient.
-boolean isFocusOnEmail = emaifield.equals(driver.switchTo().activeElement());
+		boolean isFocusOnEmail = emaifield.equals(driver.switchTo().activeElement());
 
-if (isFocusOnEmail) {
-    randomscenarioslog.info("Focus is on the email field.");
-    reportlog.logTestwithPassed("Focus is on the First namefield.");
+		if (isFocusOnEmail) {
+			randomscenarioslog.info("Focus is on the email field.");
+			reportlog.logTestwithPassed("Focus is on the First namefield.");
 
-} else {
-    randomscenarioslog.error("Focus is NOT on the email field.");
-	reportlog.logTestwithFailed("Focus  is not on  First namefield.");
+		} else {
+			randomscenarioslog.error("Focus is NOT on the email field.");
+			reportlog.logTestwithFailed("Focus  is not on  First namefield.");
 
-} // input[@id='firstName']*/
+		} // input[@id='firstName']*/
 		WebElement aboutTab = driver.findElement(By.xpath("//li[@id='aboutTab']/a[@href]"));
-	
+
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].click();", aboutTab);
-	    randomscenarioslog.info("Clicked on AboutTab Link.");
+		randomscenarioslog.info("Clicked on AboutTab Link.");
 
 		// waitForVisibilty( aboutTab, 40, "About tab " );
 
 		// clickbuttonAndAssert( aboutTab, "About tab ");
 		WebElement firstName = driver.findElement(By.id("firstName"));
 		waitForVisibilty(firstName, 40, "first Name field ");
-	    
+
 		firstName.click();
 		randomscenarioslog.info("Clicked on First Name Link.");
-        reportlog.logTestInfo("Clicked on First Name Link.");
-        boolean isFocusOnFirstName = firstName.equals(driver.switchTo().activeElement());
-assertEquals(firstName,driver.switchTo().activeElement());
-        if (isFocusOnFirstName ) {
+		reportlog.logTestInfo("Clicked on First Name Link.");
+		boolean isFocusOnFirstName = firstName.equals(driver.switchTo().activeElement());
+		assertEquals(firstName, driver.switchTo().activeElement());
+		if (isFocusOnFirstName) {
 			randomscenarioslog.info("Focus is on the First namefield.");
 			reportlog.logTestwithPassed("Focus is on the First namefield.");
 
@@ -149,12 +153,12 @@ assertEquals(firstName,driver.switchTo().activeElement());
 			randomscenarioslog.error("Focus is not on  First namefield.");
 			reportlog.logTestwithFailed("Focus  is not on  First namefield.");
 		}
-		
+
 		String nametxt = firstName.getAttribute("value");
 		WebElement lastName = driver.findElement(By.id("lastName"));
 		waitForVisibilty(lastName, 40, "last Name field ");
 		elementSendTextWithAssert(lastName, "Gallo123", "last name is ");
-		
+
 		String lastNametxt = lastName.getText();
 		WebElement saveBttn = driver.findElement(By.xpath("//input[@value='Save All']"));
 		// waitForVisibilty( aboutTab, 40, "About tab " );
@@ -171,33 +175,40 @@ assertEquals(firstName,driver.switchTo().activeElement());
 		WebElement topleftheader = driver
 				.findElement(By.xpath("//div[@class='chatterBreadcrumbs']//span[@id='tailBreadcrumbNode']"));
 		String leftheadertxt = topleftheader.getText();
-		boolean isContainsLastName=leftheadertxt.contains(lastNametxt);
-assertTrue(leftheadertxt.contains(lastNametxt));
+		boolean isContainsLastName = leftheadertxt.contains(lastNametxt);
+		assertTrue(leftheadertxt.contains(lastNametxt));
 		if (isContainsLastName) {
 			randomscenarioslog.info("Page Header shows the updated Last Name, at the top left hand side of the page");
-			reportlog.logTestwithPassed("Page Header shows the updated Last Name, at the top left hand side of the page");
+			reportlog.logTestwithPassed(
+					"Page Header shows the updated Last Name, at the top left hand side of the page");
 
 		} else {
 			randomscenarioslog.error("Page Header shows the updated Last Name, at the top left hand side of the page");
-			reportlog.logTestwithFailed("Page Header shows the updated Last Name, at the top left hand side of the page");
+			reportlog.logTestwithFailed(
+					"Page Header shows the updated Last Name, at the top left hand side of the page");
 
 		}
 
 		WebElement topRightheader = driver
 				.findElement(By.xpath("//div[@id='userNavButton']//span[@class='menuButtonLabel']"));
 		String Rightheadertxt = getText(topleftheader);
-		boolean isContainslastname=Rightheadertxt.contains(lastNametxt);
+		boolean isContainslastname = Rightheadertxt.contains(lastNametxt);
 		assertTrue(Rightheadertxt.contains(lastNametxt));
 		if (isContainslastname) {
 			randomscenarioslog.info("menu button shows the updated Last Name, at the top right hand side of the page");
-			reportlog.logTestwithPassed("menu button shows the updated Last Name, at the top right hand side of the page");
+			reportlog.logTestwithPassed(
+					"menu button shows the updated Last Name, at the top right hand side of the page");
 		} else {
-			randomscenarioslog.error("menu button  do not shows the updated Last Name, at the top right hand side of the page");
-			reportlog.logTestwithFailed("menu button  do not shows the updated Last Name, at the top right hand side of the page");
+			randomscenarioslog
+					.error("menu button  do not shows the updated Last Name, at the top right hand side of the page");
+			reportlog.logTestwithFailed(
+					"menu button  do not shows the updated Last Name, at the top right hand side of the page");
 		}
-	
+		randomscenarioslog.info("All assertions Passed");
+		reportlog.logTestInfo("All assertions Passed");
 
 	}
+
 	@Test
 	public void verifytabcustomization() throws InterruptedException {
 
@@ -212,8 +223,8 @@ assertTrue(leftheadertxt.contains(lastNametxt));
 		Select select1 = new Select(availabledropdown);
 		/*
 		 * select1.selectByValueAndAssert("Campaign"); WebElement add_arrow =
-		 * driver.findElement(By.className("rightArrowIcon")); clickbuttonAndAssert(add_arrow,
-		 * " left Arrow "); WebElement savebttn =
+		 * driver.findElement(By.className("rightArrowIcon"));
+		 * clickbuttonAndAssert(add_arrow, " left Arrow "); WebElement savebttn =
 		 * driver.findElement(By.xpath("//input[@value=\" Save \"]"));
 		 * 
 		 * clickbuttonAndAssert(savebttn, "Save ");
@@ -222,23 +233,22 @@ assertTrue(leftheadertxt.contains(lastNametxt));
 		for (WebElement option : alloptions) {
 			// System.out.println(option.getText());
 //Thread.sleep(6000);
-boolean isCampaignsExists=option.getText().trim().startsWith("Campaigns");
+			boolean isCampaignsExists = option.getText().trim().startsWith("Campaigns");
 
 			if (isCampaignsExists) {
 				assertTrue(isCampaignsExists);
 				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", option);
 				randomscenarioslog.info("Campaign option is present in Available tab");
 				reportlog.logTestwithPassed("Campaign option is present in Available tab");
-				
+
 				((JavascriptExecutor) driver).executeScript("arguments[0].click();", option);
 				option.click();
 				randomscenarioslog.info(" Campaign  option is clicked");
 				reportlog.logTestwithPassed(" Campaign  option is clicked");
 
-				
 				WebElement add_arrow = driver.findElement(By.className("rightArrowIcon"));
 				clickbuttonAndAssert(add_arrow, " left Arrow ");
-				
+
 				WebElement savebttn = driver.findElement(By.xpath("//input[@value=\" Save \"]"));
 				clickbuttonAndAssert(savebttn, "Save ");
 				break;
@@ -249,7 +259,7 @@ boolean isCampaignsExists=option.getText().trim().startsWith("Campaigns");
 			}
 		}
 		WebElement selectedtabs_dropdown = driver.findElement(By.id("duel_select_1"));
-		waitForVisibility(selectedtabs_dropdown, 40,2, "Selected tab ");
+		waitForVisibility(selectedtabs_dropdown, 40, 2, "Selected tab ");
 		Select select = new Select(selectedtabs_dropdown);
 		// String actualstr = select.getFirstSelectedOption().getText();
 		select.selectByValue("Campaign");
@@ -289,7 +299,10 @@ boolean isCampaignsExists=option.getText().trim().startsWith("Campaigns");
 
 			}
 		}
+		randomscenarioslog.info("All assertions Passed");
+		reportlog.logTestInfo("All assertions Passed");
 	}
+
 	@Test
 	public void blockingAnEventCalender() throws InterruptedException {
 		assertCurrentURL("https://login.salesforce.com/");
@@ -300,47 +313,49 @@ boolean isCampaignsExists=option.getText().trim().startsWith("Campaigns");
 		WebElement hometab = driver.findElement(By.id("home_Tab"));
 		waitForVisibilty(hometab, 70, "hometab ");
 		clickbuttonAndAssert(hometab, " Home tab  ");
-	    randomscenarioslog.info("Clicked on Home tab");
+		randomscenarioslog.info("Clicked on Home tab");
 
 		WebElement datelinkb = driver.findElement(By.xpath("//div[@class='content']//span/a"));
 		waitForVisibilty(datelinkb, 30, "Dtae time ");
 		clickbuttonAndAssert(datelinkb, "DateTime link");
-	    randomscenarioslog.info("Clicked on DateTime link");
-		String expectedTitle ="Calendar for Sudeepa Gallo";
-		String actualTitle =driver.getTitle();
-assertTrue(actualTitle.contains(expectedTitle),"Title is not matching ");
+		randomscenarioslog.info("Clicked on DateTime link");
+		String expectedTitle = "Calendar for Sudeepa Gallo";
+		String actualTitle = driver.getTitle();
+		assertTrue(actualTitle.contains(expectedTitle), "Title is not matching ");
 		//
 
 		WebElement headertitle = driver.findElement(By.xpath("//div[@class='content']/h1"));
 		String headertxtString = headertitle.getText();
-		String exptxtString = "Calendar for Sudeepa Gallo\\d* - Day View"; // Regular expression allowing for any number of digits after "Gallo"
+		String exptxtString = "Calendar for Sudeepa Gallo\\d* - Day View"; // Regular expression allowing for any number
+																			// of digits after "Gallo"
 		assertTrue(headertxtString.matches(exptxtString));
 		List<WebElement> timeTable = driver.findElements(By.xpath("//td[@class='fixedTable']//div/a"));
 		for (WebElement time : timeTable) {
 			randomscenarioslog.info(time.getText());
 			if (time.getText().contains("8:00 PM")) {
-			    assertTrue(true);
-			    randomscenarioslog.info( "Time text contains '8:00 PM'");
-			    reportlog.logTestwithPassed("Time text contains '8:00 PM'");
-			    waitForclickable(time, 30, "Time link ");
-			    time.click();
-			    break;
-			    // Your method call
-			} else {
-
-			    randomscenarioslog.info( "Time text does not contains '8:00 PM'");
-			    reportlog.logTestwithFailed("Time text does not contain '8:00 PM'");
-			}
-		/*	if (time.getText().contains("8:00 PM")) {
-				waitForclickable(time, 30, "");
+				assertTrue(true);
+				randomscenarioslog.info("Time text contains '8:00 PM'");
+				reportlog.logTestwithPassed("Time text contains '8:00 PM'");
+				waitForclickable(time, 30, "Time link ");
 				time.click();
-				
 				break;
-
+				// Your method call
 			} else {
-				System.out.println(" expected Time  is not  present in Time table ");
 
-			}*/
+				randomscenarioslog.info("Time text does not contains '8:00 PM'");
+				reportlog.logTestwithFailed("Time text does not contain '8:00 PM'");
+			}
+			/*
+			 * if (time.getText().contains("8:00 PM")) { waitForclickable(time, 30, "");
+			 * time.click();
+			 * 
+			 * break;
+			 * 
+			 * } else {
+			 * System.out.println(" expected Time  is not  present in Time table ");
+			 * 
+			 * }
+			 */
 		}
 		String parentwin = driver.getWindowHandle();
 
@@ -349,7 +364,7 @@ assertTrue(actualTitle.contains(expectedTitle),"Title is not matching ");
 			WebElement inputsubject = driver.findElement(By.xpath("//input[@id='evt5']"));
 			String subjecttxt = getTextFromElement(inputsubject, "Subject input ");
 			// assertStringsEqual(othertxt,subjecttxt);
-			 randomscenarioslog.info("subject text" + subjecttxt);
+			randomscenarioslog.info("subject text" + subjecttxt);
 			Thread.sleep(2000);
 			WebElement endFeild = driver.findElement(By.id("EndDateTime_time"));
 			clickbuttonAndAssert(endFeild, "field is");
@@ -357,27 +372,27 @@ assertTrue(actualTitle.contains(expectedTitle),"Title is not matching ");
 
 			List<WebElement> times = driver.findElements(By.id("//div[@id='simpleTimePicker']//div"));
 			for (WebElement time : times) {
-			
+
 				if (time.getText().equals("9:00 PM")) {
 					assertTrue(true);
-					randomscenarioslog.info( "Time text contains '9:00 PM'");
-				    reportlog.logTestwithPassed("Time text contains '9:00 PM'");
+					randomscenarioslog.info("Time text contains '9:00 PM'");
+					reportlog.logTestwithPassed("Time text contains '9:00 PM'");
 					waitForclickable(time, 30, "Time link ");
-				    time.click();
-				    break;
+					time.click();
+					break;
 
 				} else {
 					// assertTrue(false);
-					    randomscenarioslog.info( "Time text does not contains '9:00 PM'");
-					    reportlog.logTestwithFailed("Time text does not contain '9:00 PM'");
-					}
-				
+					randomscenarioslog.info("Time text does not contains '9:00 PM'");
+					reportlog.logTestwithFailed("Time text does not contain '9:00 PM'");
+				}
+
 			}
 		} catch (NoSuchWindowException e) {
 
-			 randomscenarioslog.info("No such window");
-			 reportlog.logTestwithFailed("No such window");
-			 throw e;
+			randomscenarioslog.info("No such window");
+			reportlog.logTestwithFailed("No such window");
+			throw e;
 		}
 
 		WebElement subjectIcon = driver.findElement(By.xpath("(//td[@class='dataCol col02'])[2]//a"));
@@ -386,11 +401,11 @@ assertTrue(actualTitle.contains(expectedTitle),"Title is not matching ");
 		Thread.sleep(7000);
 		WebDriverWait wait = new WebDriverWait(driver, 40);
 		wait.until(ExpectedConditions.numberOfWindowsToBe(2));
-		//System.out.println(parentwin);
+		// System.out.println(parentwin);
 
 		Set<String> handles = driver.getWindowHandles();
 		System.out.println("Windows size is " + driver.getWindowHandles().size());
-	//	System.out.println(handles);
+		// System.out.println(handles);
 		for (String handle : handles) {
 			System.out.println("Window handle: " + handle);
 
@@ -398,9 +413,9 @@ assertTrue(actualTitle.contains(expectedTitle),"Title is not matching ");
 				try {
 					driver.switchTo().window(handle);
 					String title = driver.getTitle();
-					 randomscenarioslog.info("Current window title is  "+title);
-					 boolean isTitleEqual=title.equals("ComboBox");
-					 assertEquals(title, "ComboBox");
+					randomscenarioslog.info("Current window title is  " + title);
+					boolean isTitleEqual = title.equals("ComboBox");
+					assertEquals(title, "ComboBox");
 					if (isTitleEqual) {
 
 						WebElement otherslink = driver.findElement(By.xpath("//ul/li[5]/a"));
@@ -411,15 +426,16 @@ assertTrue(actualTitle.contains(expectedTitle),"Title is not matching ");
 						// Actions action = new Actions(driver);
 						// action.moveToElement(otherslink).doubleClick().build().perform();
 						((JavascriptExecutor) driver).executeScript("arguments[0].click();", otherslink);
-						 randomscenarioslog.info( "Other link is clicked");
-					    reportlog.logTestwithPassed( "Other link is clicked");;
+						randomscenarioslog.info("Other link is clicked");
+						reportlog.logTestwithPassed("Other link is clicked");
+						;
 						////
 //break;
 					}
 				} catch (NoSuchWindowException e) {
-					 randomscenarioslog.info("Window with handle '" + handle + "' is not available.");
+					randomscenarioslog.info("Window with handle '" + handle + "' is not available.");
 					// driver.switchTo().window("this is child handle"+handle);
-					 throw e;
+					throw e;
 
 				}
 			}
@@ -455,35 +471,39 @@ assertTrue(actualTitle.contains(expectedTitle),"Title is not matching ");
 		for (WebElement content : contents) {
 
 			String text = content.getText();
-			 boolean isTitleEqual=(text.equalsIgnoreCase(othertxt));
-assertEquals(text, othertxt);
+			boolean isTitleEqual = (text.equalsIgnoreCase(othertxt));
+			assertEquals(text, othertxt);
 			if (isTitleEqual) {
-				 randomscenarioslog.info("Other' event  matches the Subject combo text");
-				    reportlog.logTestwithPassed( "Other' event  matches the Subject combo text");;
+				randomscenarioslog.info("Other' event  matches the Subject combo text");
+				reportlog.logTestwithPassed("Other' event  matches the Subject combo text");
+				;
 
-			}else {
+			} else {
 				randomscenarioslog.info("Other' event does not  matches the Subject combo text");
-				 reportlog.logTestwithFailed("Other' event does not  matches the Subject combo text");
+				reportlog.logTestwithFailed("Other' event does not  matches the Subject combo text");
 			}
-		
+
 		}
+		randomscenarioslog.info("All assertions Passed");
+		reportlog.logTestInfo("All assertions Passed");
 	}
-		@Test
+
+	@Test
 	public void weeklyrecurranceCalender() throws InterruptedException {
-			assertCurrentURL("https://login.salesforce.com/");
-		    randomscenarioslog.info("Current URL assertion passed");
+		assertCurrentURL("https://login.salesforce.com/");
+		randomscenarioslog.info("Current URL assertion passed");
 
 		initialSetup();
 		assertTitle("Home Page ~ Salesforce - Developer Edition");
 		WebElement hometab = driver.findElement(By.id("home_Tab"));
 		waitForVisibilty(hometab, 70, "hometab ");
 		clickbuttonAndAssert(hometab, " Home tab  ");
-	    randomscenarioslog.info("Clicked on Home tab");
+		randomscenarioslog.info("Clicked on Home tab");
 
 		WebElement datelinkb = driver.findElement(By.xpath("//div[@class='content']//span/a"));
 		waitForVisibilty(datelinkb, 30, "Dtae time ");
 		clickbuttonAndAssert(datelinkb, "DateTime link");
-	    randomscenarioslog.info("Clicked on DateTime link");
+		randomscenarioslog.info("Clicked on DateTime link");
 
 		assertTitle("Calendar for Sudeepa Gallo123 ~ Salesforce - Developer Edition");
 		//
@@ -494,21 +514,21 @@ assertEquals(text, othertxt);
 		assertStringsEqual(headertxtString, exptxtString);
 		List<WebElement> timeTable = driver.findElements(By.xpath("//td[@class='fixedTable']//div/a"));
 		for (WebElement time : timeTable) {
-			//System.out.println(time.getText());
+			// System.out.println(time.getText());
 			if (time.getText().equals("4:00 PM")) {
 				assertTrue(true);
-				randomscenarioslog.info( "Time text contains '4:00 PM'");
-			    reportlog.logTestwithPassed("Time text contains '4:00 PM'");
+				randomscenarioslog.info("Time text contains '4:00 PM'");
+				reportlog.logTestwithPassed("Time text contains '4:00 PM'");
 				waitForclickable(time, 50, "Time link ");
-			    time.click();
-			    break;
+				time.click();
+				break;
 
 			} else {
-				
-				    randomscenarioslog.info( "Time text does not contains '4:00 PM'");
-				    reportlog.logTestwithFailed("Time text does not contain '4:00 PM'");
-				}
-			
+
+				randomscenarioslog.info("Time text does not contains '4:00 PM'");
+				reportlog.logTestwithFailed("Time text does not contain '4:00 PM'");
+			}
+
 		}
 		String parentwin = driver.getWindowHandle();
 
@@ -527,22 +547,22 @@ assertEquals(text, othertxt);
 			for (WebElement time : times) {
 				if (time.getText().equals("7:00 PM")) {
 					assertTrue(true);
-					randomscenarioslog.info( "Time text contains '7:00 PM'");
-				    reportlog.logTestwithPassed("Time text contains '7:00 PM'");
+					randomscenarioslog.info("Time text contains '7:00 PM'");
+					reportlog.logTestwithPassed("Time text contains '7:00 PM'");
 					waitForclickable(time, 50, "Time link ");
-				    time.click();
-				    break;
+					time.click();
+					break;
 
 				} else {
-					
-					    randomscenarioslog.info( "Time text does not contains '07:00 PMPM'");
-					    reportlog.logTestwithFailed("Time text does not contain '7:00 PMPM'");
-					}
-				
+
+					randomscenarioslog.info("Time text does not contains '07:00 PMPM'");
+					reportlog.logTestwithFailed("Time text does not contain '7:00 PMPM'");
+				}
+
 			}
 		} catch (NoSuchWindowException e) {
 
-			 randomscenarioslog.info("No such window");
+			randomscenarioslog.info("No such window");
 			throw e;
 		}
 
@@ -551,14 +571,14 @@ assertEquals(text, othertxt);
 		clickbuttonAndAssert(subjectIcon, "Subject icon");
 		Thread.sleep(7000);
 		WebDriverWait wait = new WebDriverWait(driver, 40);
-		//wait.until(ExpectedConditions.numberOfWindowsToBe(2));
-		//System.out.println(parentwin);
+		// wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+		// System.out.println(parentwin);
 
 		Set<String> handles = driver.getWindowHandles();
 		System.out.println("Windows size is " + driver.getWindowHandles().size());
 		System.out.println(handles);
 		for (String handle : handles) {
-			//System.out.println("Window handle: " + handle);
+			// System.out.println("Window handle: " + handle);
 
 			if (!handle.equals(parentwin)) {
 				try {
@@ -574,20 +594,19 @@ assertEquals(text, othertxt);
 						// Actions action = new Actions(driver);
 						// action.moveToElement(otherslink).doubleClick().build().perform();
 						((JavascriptExecutor) driver).executeScript("arguments[0].click();", otherslink);
-						 randomscenarioslog.info("Other' link is clicked");
-						    reportlog.logTestwithPassed("Other' link is clicked");;
+						randomscenarioslog.info("Other' link is clicked");
+						reportlog.logTestwithPassed("Other' link is clicked");
+						;
 
-						////
-//break;
+						
 					}
 				} catch (NoSuchWindowException e) {
-					 randomscenarioslog.info("Window with handle '" + handle + "' is not available.");
+					randomscenarioslog.info("Window with handle '" + handle + "' is not available.");
 					// driver.switchTo().window("this is child handle"+handle);
 					throw e;
 
 				}
 
-				
 			}
 		}
 
@@ -602,13 +621,13 @@ assertEquals(text, othertxt);
 		List<WebElement> days = driver.findElements(By.xpath("//div[@id='w']//div[2]//input"));
 		for (WebElement day : days) {
 			if (day.isSelected()) {
-				//assertTrue(true);
-				 randomscenarioslog.info(day + " is selected ");
-				 reportlog.logTestwithPassed(day + " is selected ");
-				 break;
+				// assertTrue(true);
+				randomscenarioslog.info(day + " is selected ");
+				reportlog.logTestwithPassed(day + " is selected ");
+				break;
 			} else {
 
-				 randomscenarioslog.error("No day selected Please select");
+				randomscenarioslog.error("No day selected Please select");
 
 			}
 		}
@@ -626,41 +645,40 @@ assertEquals(text, othertxt);
 		DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("d");
 
 		String formattedEndDate = endDate.format(formatter);
-boolean dateFound=false;
+		boolean dateFound = false;
 //if(!dateFound)
 //{
-if(!formattedEndDate.contains("0")) {
-	//try {
-		Thread.sleep(3000);
+		if (!formattedEndDate.contains("0")) {
+			// try {
+			Thread.sleep(3000);
 // Locate and select the end date in the date picker
-		WebElement endDatePicker = driver
-				.findElement(By.xpath("//div[@class='datePicker']//td[contains(text(), '" + formattedEndDate + "')]"));
-randomscenarioslog.info(endDatePicker.getText());
-endDatePicker.click();
-		//dateFound = true;
-		
-}else {
+			WebElement endDatePicker = driver.findElement(
+					By.xpath("//div[@class='datePicker']//td[contains(text(), '" + formattedEndDate + "')]"));
+			randomscenarioslog.info(endDatePicker.getText());
+			endDatePicker.click();
+			// dateFound = true;
+
+		} else {
 ///}catch (NoSuchElementException e) {
-	Thread.sleep(3000);
+			Thread.sleep(3000);
 
-	DateTimeFormatter formatter12 = DateTimeFormatter.ofPattern("d");
-	String formattedEndDate1 = endDate.format(formatter12);
-	Thread.sleep(5000);
-	WebElement endDatePickerNextMonth = driver
-			.findElement(By.xpath("//img[contains(@title, 'Next')]"));
-	waitForclickable(endDatePickerNextMonth, 50, "Next Month" );
-	Thread.sleep(3000);
+			DateTimeFormatter formatter12 = DateTimeFormatter.ofPattern("d");
+			String formattedEndDate1 = endDate.format(formatter12);
+			Thread.sleep(5000);
+			WebElement endDatePickerNextMonth = driver.findElement(By.xpath("//img[contains(@title, 'Next')]"));
+			waitForclickable(endDatePickerNextMonth, 50, "Next Month");
+			Thread.sleep(3000);
 
-	endDatePickerNextMonth.click();
+			endDatePickerNextMonth.click();
 
-	WebElement endDatePicker = driver.findElement(By.xpath("//div[@class='datePicker']//td[contains(text(), '" + formattedEndDate1 + "')]"));
-	waitForclickable(endDatePicker, 50, "date pick" );
-	Thread.sleep(3000);
+			WebElement endDatePicker = driver.findElement(
+					By.xpath("//div[@class='datePicker']//td[contains(text(), '" + formattedEndDate1 + "')]"));
+			waitForclickable(endDatePicker, 50, "date pick");
+			Thread.sleep(3000);
 
-    endDatePicker.click();
+			endDatePicker.click();
 
-
-	}
+		}
 		String title = driver.getTitle();
 		System.out.println(title);
 		if (!title.equals("ComboBox")) {
@@ -675,8 +693,8 @@ endDatePicker.click();
 		String headertxt = getTextFromElement(headerPage, "Header text");
 		String headerExptxt = "Calendar for Sudeepa Gallo123 - Month View";
 		assertStringsEqual(headertxt, headerExptxt);
-	
-	}
 
-	
+		randomscenarioslog.info("All assertions Passed");
+		reportlog.logTestInfo("All assertions Passed");
+	}
 }
