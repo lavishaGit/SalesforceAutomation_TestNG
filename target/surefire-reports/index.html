@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 21 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-RegressionSuite" class="navigator-link">
+              <span class="suite-name border-failed">RegressionSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-RegressionSuite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-RegressionSuite" class="navigator-link ">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-RegressionSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-RegressionSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-RegressionSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-RegressionSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-RegressionSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">32 methods, 21 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods failed suite-RegressionSuite"> (hide)</a> <!-- hide-methods failed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods failed suite-RegressionSuite"> (show)</a> <!-- show-methods failed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceUserMenu_Testcases" class="method navigator-link" hash-for-method="MyProfile">MyProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceCreateOpty_Testcases" class="method navigator-link" hash-for-method="QuarterlySummaryReport">QuarterlySummaryReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceRandomScenarios_Testcases" class="method navigator-link" hash-for-method="blockingAnEventCalender">blockingAnEventCalender</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceContact_Testcases" class="method navigator-link" hash-for-method="checkSaveNewButtn">checkSaveNewButtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceContact_Testcases" class="method navigator-link" hash-for-method="createNewContact">createNewContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceCreateOpty_Testcases" class="method navigator-link" hash-for-method="createNewOppty">createNewOppty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceContact_Testcases" class="method navigator-link" hash-for-method="createNewViewContact">createNewViewContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceUserMenu_Testcases" class="method navigator-link" hash-for-method="developerConsole">developerConsole</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLoginPage_Testcases" class="method navigator-link" hash-for-method="loginErrorMessage">loginErrorMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLoginPage_Testcases" class="method navigator-link" hash-for-method="login_Homepage">login_Homepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceUserMenu_Testcases" class="method navigator-link" hash-for-method="logoutOption">logoutOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceUserMenu_Testcases" class="method navigator-link" hash-for-method="mySettingOption">mySettingOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceContact_Testcases" class="method navigator-link" hash-for-method="mycontactsView">mycontactsView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLoginPage_Testcases" class="method navigator-link" hash-for-method="rememberUser_checkbox">rememberUser_checkbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceRandomScenarios_Testcases" class="method navigator-link" hash-for-method="verifyAccountHolder">verifyAccountHolder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceContact_Testcases" class="method navigator-link" hash-for-method="verifyErrormessage">verifyErrormessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLeads_Testcases" class="method navigator-link" hash-for-method="verifyListitemTodaysLeads">verifyListitemTodaysLeads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceUserMenu_Testcases" class="method navigator-link" hash-for-method="verifySelectuserMenu">verifySelectuserMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceRandomScenarios_Testcases" class="method navigator-link" hash-for-method="verifylastnameEdit_Variousplace">verifylastnameEdit_Variousplace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceRandomScenarios_Testcases" class="method navigator-link" hash-for-method="verifytabcustomization">verifytabcustomization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceRandomScenarios_Testcases" class="method navigator-link" hash-for-method="weeklyrecurranceCalender">weeklyrecurranceCalender</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods passed suite-RegressionSuite"> (hide)</a> <!-- hide-methods passed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods passed suite-RegressionSuite"> (show)</a> <!-- show-methods passed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-RegressionSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLeads_Testcases" class="method navigator-link" hash-for-method="Leadstablink">Leadstablink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceCreateOpty_Testcases" class="method navigator-link" hash-for-method="OpportunityPipelineReport">OpportunityPipelineReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceCreateOpty_Testcases" class="method navigator-link" hash-for-method="StuckOpportunitiesReport">StuckOpportunitiesReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceContact_Testcases" class="method navigator-link" hash-for-method="checkCancelButtn_NewView">checkCancelButtn_NewView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLeads_Testcases" class="method navigator-link" hash-for-method="defaultView">defaultView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLeads_Testcases" class="method navigator-link" hash-for-method="leadsSelectView">leadsSelectView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLoginPage_Testcases" class="method navigator-link" hash-for-method="loginPage_EmptyPassword">loginPage_EmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceCreateOpty_Testcases" class="method navigator-link" hash-for-method="opportunitiesdropdown">opportunitiesdropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceContact_Testcases" class="method navigator-link" hash-for-method="recentContactsView">recentContactsView</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLoginPage_Testcases" class="method navigator-link" hash-for-method="testForgotPasssword">testForgotPasssword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="com.salesforce.automation.SalesforceLeads_Testcases" class="method navigator-link" hash-for-method="verifyNewButtonOnLeads">verifyNewButtonOnLeads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RegressionSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceContact_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSaveNewButtn">
+                  </a> <!-- checkSaveNewButtn -->
+                  <span class="method-name">checkSaveNewButtn</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window
+  (Session info: chrome=121.0.6167.184)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Nitins-MacBook-Pro.local&apos;, ip: &apos;2601:646:8084:4d20:0:0:0:ec4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: /var/folders/gx/qjsbcn6d6d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59258}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c65462b0f941009e14105a884ccdd222
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.window(RemoteWebDriver.java:903)
+	at com.salesforce.automation.SalesforceContact_Testcases.checkSaveNewButtn(SalesforceContact_Testcases.java:295)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewContact">
+                  </a> <!-- createNewContact -->
+                  <span class="method-name">createNewContact</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@class=&apos;list&apos;]//tr[2]/th/a&quot;}
+  (Session info: chrome=121.0.6167.184)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Nitins-MacBook-Pro.local&apos;, ip: &apos;2601:646:8084:4d20:0:0:0:ec4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: /var/folders/gx/qjsbcn6d6d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59306}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a92a1359bf288a1bd16c9dbbee66941
+*** Element info: {Using=xpath, value=//table[@class=&apos;list&apos;]//tr[2]/th/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforce.automation.SalesforceContact_Testcases.createNewContact(SalesforceContact_Testcases.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewViewContact">
+                  </a> <!-- createNewViewContact -->
+                  <span class="method-name">createNewViewContact</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Accounts: Home ~ Salesforce - Developer Edition] but found [Contacts: Home ~ Salesforce - Developer Edition]
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceContact_Testcases.createNewViewContact(SalesforceContact_Testcases.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mycontactsView">
+                  </a> <!-- mycontactsView -->
+                  <span class="method-name">mycontactsView</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [View dropdwn selected] but found [w]
+	at com.salesforce.base.BaseClass.assertDefaultoption(BaseClass.java:516)
+	at com.salesforce.automation.SalesforceContact_Testcases.mycontactsView(SalesforceContact_Testcases.java:137)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErrormessage">
+                  </a> <!-- verifyErrormessage -->
+                  <span class="method-name">verifyErrormessage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://login.salesforce.com/] but found [https://dan000000cz3teag-dev-ed.develop.my.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom]
+	at com.salesforce.base.BaseClass.assertCurrentURL(BaseClass.java:273)
+	at com.salesforce.automation.SalesforceContact_Testcases.verifyErrormessage(SalesforceContact_Testcases.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceCreateOpty_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="QuarterlySummaryReport">
+                  </a> <!-- QuarterlySummaryReport -->
+                  <span class="method-name">QuarterlySummaryReport</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at com.salesforce.automation.SalesforceCreateOpty_Testcases.QuarterlySummaryReport(SalesforceCreateOpty_Testcases.java:192)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewOppty">
+                  </a> <!-- createNewOppty -->
+                  <span class="method-name">createNewOppty</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://dan000000cz3teag-dev-ed.develop.my.salesforce.com/006an000000lqXp] but found [https://dan000000cz3teag-dev-ed.develop.my.salesforce.com/006/e]
+	at com.salesforce.base.BaseClass.assertCurrentURL(BaseClass.java:273)
+	at com.salesforce.automation.SalesforceCreateOpty_Testcases.createNewOppty(SalesforceCreateOpty_Testcases.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceRandomScenarios_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="blockingAnEventCalender">
+                  </a> <!-- blockingAnEventCalender -->
+                  <span class="method-name">blockingAnEventCalender</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found []
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceRandomScenarios_Testcases.blockingAnEventCalender(SalesforceRandomScenarios_Testcases.java:298)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAccountHolder">
+                  </a> <!-- verifyAccountHolder -->
+                  <span class="method-name">verifyAccountHolder</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found [Login | Salesforce]
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceRandomScenarios_Testcases.verifyAccountHolder(SalesforceRandomScenarios_Testcases.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifylastnameEdit_Variousplace">
+                  </a> <!-- verifylastnameEdit_Variousplace -->
+                  <span class="method-name">verifylastnameEdit_Variousplace</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found []
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceRandomScenarios_Testcases.verifylastnameEdit_Variousplace(SalesforceRandomScenarios_Testcases.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifytabcustomization">
+                  </a> <!-- verifytabcustomization -->
+                  <span class="method-name">verifytabcustomization</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //li[@id=&apos;AllTab_Tab&apos;]/a[@href]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Nitins-MacBook-Pro.local&apos;, ip: &apos;2601:646:8084:4d20:0:0:0:ec4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 20.5.0, moz:processID: 49665, moz:profile: /var/folders/gx/qjsbcn6d6d3..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e72bab5b-027e-4873-99d0-9bb185e3638d
+*** Element info: {Using=xpath, value=//li[@id=&apos;AllTab_Tab&apos;]/a[@href]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforce.automation.SalesforceRandomScenarios_Testcases.verifytabcustomization(SalesforceRandomScenarios_Testcases.java:205)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="weeklyrecurranceCalender">
+                  </a> <!-- weeklyrecurranceCalender -->
+                  <span class="method-name">weeklyrecurranceCalender</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found []
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceRandomScenarios_Testcases.weeklyrecurranceCalender(SalesforceRandomScenarios_Testcases.java:476)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceLeads_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyListitemTodaysLeads">
+                  </a> <!-- verifyListitemTodaysLeads -->
+                  <span class="method-name">verifyListitemTodaysLeads</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;fcf&apos;]&quot;}
+  (Session info: chrome=121.0.6167.184)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Nitins-MacBook-Pro.local&apos;, ip: &apos;2601:646:8084:4d20:0:0:0:ec4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.184, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: /var/folders/gx/qjsbcn6d6d3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58549}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30d580f5a78772de0811c13eff4d4e90
+*** Element info: {Using=xpath, value=//select[@id=&apos;fcf&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforce.base.BaseClass.assertDefaultoption(BaseClass.java:504)
+	at com.salesforce.automation.SalesforceLeads_Testcases.verifyListitemTodaysLeads(SalesforceLeads_Testcases.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceUserMenu_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MyProfile">
+                  </a> <!-- MyProfile -->
+                  <span class="method-name">MyProfile</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found []
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceUserMenu_Testcases.MyProfile(SalesforceUserMenu_Testcases.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="developerConsole">
+                  </a> <!-- developerConsole -->
+                  <span class="method-name">developerConsole</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found []
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceUserMenu_Testcases.developerConsole(SalesforceUserMenu_Testcases.java:584)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutOption">
+                  </a> <!-- logoutOption -->
+                  <span class="method-name">logoutOption</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found []
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceUserMenu_Testcases.logoutOption(SalesforceUserMenu_Testcases.java:640)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mySettingOption">
+                  </a> <!-- mySettingOption -->
+                  <span class="method-name">mySettingOption</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found [Login | Salesforce]
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceUserMenu_Testcases.mySettingOption(SalesforceUserMenu_Testcases.java:341)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySelectuserMenu">
+                  </a> <!-- verifySelectuserMenu -->
+                  <span class="method-name">verifySelectuserMenu</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home ~ Salesforce - Developer Edition] but found []
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceUserMenu_Testcases.verifySelectuserMenu(SalesforceUserMenu_Testcases.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceLoginPage_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginErrorMessage">
+                  </a> <!-- loginErrorMessage -->
+                  <span class="method-name">loginErrorMessage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: div#error.loginError
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Nitins-MacBook-Pro.local&apos;, ip: &apos;2601:646:8084:4d20:0:0:0:ec4a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.4&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 120.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231129155202, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 20.5.0, moz:processID: 49009, moz:profile: /var/folders/gx/qjsbcn6d6d3..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e7da0151-6709-46b7-9355-aa26aa237928
+*** Element info: {Using=css selector, value=div#error.loginError}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.salesforce.automation.SalesforceLoginPage_Testcases.loginErrorMessage(SalesforceLoginPage_Testcases.java:142)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_Homepage">
+                  </a> <!-- login_Homepage -->
+                  <span class="method-name">login_Homepage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found []
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceLoginPage_Testcases.login_Homepage(SalesforceLoginPage_Testcases.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rememberUser_checkbox">
+                  </a> <!-- rememberUser_checkbox -->
+                  <span class="method-name">rememberUser_checkbox</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found [Login | Salesforce]
+	at com.salesforce.base.BaseClass.assertTitle(BaseClass.java:256)
+	at com.salesforce.automation.SalesforceLoginPage_Testcases.rememberUser_checkbox(SalesforceLoginPage_Testcases.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceContact_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCancelButtn_NewView">
+                  </a> <!-- checkCancelButtn_NewView -->
+                  <span class="method-name">checkCancelButtn_NewView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="recentContactsView">
+                  </a> <!-- recentContactsView -->
+                  <span class="method-name">recentContactsView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceCreateOpty_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OpportunityPipelineReport">
+                  </a> <!-- OpportunityPipelineReport -->
+                  <span class="method-name">OpportunityPipelineReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="StuckOpportunitiesReport">
+                  </a> <!-- StuckOpportunitiesReport -->
+                  <span class="method-name">StuckOpportunitiesReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="opportunitiesdropdown">
+                  </a> <!-- opportunitiesdropdown -->
+                  <span class="method-name">opportunitiesdropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceLeads_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Leadstablink">
+                  </a> <!-- Leadstablink -->
+                  <span class="method-name">Leadstablink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="defaultView">
+                  </a> <!-- defaultView -->
+                  <span class="method-name">defaultView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="leadsSelectView">
+                  </a> <!-- leadsSelectView -->
+                  <span class="method-name">leadsSelectView</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewButtonOnLeads">
+                  </a> <!-- verifyNewButtonOnLeads -->
+                  <span class="method-name">verifyNewButtonOnLeads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesforce.automation.SalesforceLoginPage_Testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage_EmptyPassword">
+                  </a> <!-- loginPage_EmptyPassword -->
+                  <span class="method-name">loginPage_EmptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotPasssword">
+                  </a> <!-- testForgotPasssword -->
+                  <span class="method-name">testForgotPasssword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+        </div> <!-- panel RegressionSuite -->
+        <div panel-name="test-xml-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/nitin/eclipseworkspace/Java/SeleniumTekarch_Framework/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;RegressionSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.salesforce.utility.SalesforceListenerUtility&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestLogin&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.salesforce.automation.SalesforceLoginPage_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestLogin --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestOppurtunities&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.salesforce.automation.SalesforceCreateOpty_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestOppurtunities --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestUserMenu&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.salesforce.automation.SalesforceUserMenu_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestUserMenu --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestLeads&amp;gt;&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.salesforce.automation.SalesforceLeads_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestLeads&gt; --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestRandomScenarios &amp;gt;&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.salesforce.automation.SalesforceRandomScenarios_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestRandomScenarios &gt; --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestContacts&amp;gt;&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.salesforce.automation.SalesforceContact_Testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestContacts&gt; --&gt;
+&lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestLogin (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestOppurtunities (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestUserMenu (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestLeads> (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestRandomScenarios > (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestContacts> (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RegressionSuite');
+function tableData_RegressionSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(32);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'defaultView')
+data.setCell(0, 2, 'com.salesforce.automation.SalesforceLeads_Testcases')
+data.setCell(0, 3, 18757);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginErrorMessage')
+data.setCell(1, 2, 'com.salesforce.automation.SalesforceLoginPage_Testcases')
+data.setCell(1, 3, 16011);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createNewOppty')
+data.setCell(2, 2, 'com.salesforce.automation.SalesforceCreateOpty_Testcases')
+data.setCell(2, 3, 14979);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyNewButtonOnLeads')
+data.setCell(3, 2, 'com.salesforce.automation.SalesforceLeads_Testcases')
+data.setCell(3, 3, 11707);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'OpportunityPipelineReport')
+data.setCell(4, 2, 'com.salesforce.automation.SalesforceCreateOpty_Testcases')
+data.setCell(4, 3, 11026);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'QuarterlySummaryReport')
+data.setCell(5, 2, 'com.salesforce.automation.SalesforceCreateOpty_Testcases')
+data.setCell(5, 3, 9167);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'recentContactsView')
+data.setCell(6, 2, 'com.salesforce.automation.SalesforceContact_Testcases')
+data.setCell(6, 3, 8538);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createNewContact')
+data.setCell(7, 2, 'com.salesforce.automation.SalesforceContact_Testcases')
+data.setCell(7, 3, 8528);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createNewViewContact')
+data.setCell(8, 2, 'com.salesforce.automation.SalesforceContact_Testcases')
+data.setCell(8, 3, 8526);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkSaveNewButtn')
+data.setCell(9, 2, 'com.salesforce.automation.SalesforceContact_Testcases')
+data.setCell(9, 3, 8471);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkCancelButtn_NewView')
+data.setCell(10, 2, 'com.salesforce.automation.SalesforceContact_Testcases')
+data.setCell(10, 3, 8297);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'StuckOpportunitiesReport')
+data.setCell(11, 2, 'com.salesforce.automation.SalesforceCreateOpty_Testcases')
+data.setCell(11, 3, 8198);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyListitemTodaysLeads')
+data.setCell(12, 2, 'com.salesforce.automation.SalesforceLeads_Testcases')
+data.setCell(12, 3, 7872);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'mycontactsView')
+data.setCell(13, 2, 'com.salesforce.automation.SalesforceContact_Testcases')
+data.setCell(13, 3, 7546);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'opportunitiesdropdown')
+data.setCell(14, 2, 'com.salesforce.automation.SalesforceCreateOpty_Testcases')
+data.setCell(14, 3, 7413);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Leadstablink')
+data.setCell(15, 2, 'com.salesforce.automation.SalesforceLeads_Testcases')
+data.setCell(15, 3, 6634);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'leadsSelectView')
+data.setCell(16, 2, 'com.salesforce.automation.SalesforceLeads_Testcases')
+data.setCell(16, 3, 6421);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'blockingAnEventCalender')
+data.setCell(17, 2, 'com.salesforce.automation.SalesforceRandomScenarios_Testcases')
+data.setCell(17, 3, 4746);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifytabcustomization')
+data.setCell(18, 2, 'com.salesforce.automation.SalesforceRandomScenarios_Testcases')
+data.setCell(18, 3, 4450);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifySelectuserMenu')
+data.setCell(19, 2, 'com.salesforce.automation.SalesforceUserMenu_Testcases')
+data.setCell(19, 3, 4429);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifylastnameEdit_Variousplace')
+data.setCell(20, 2, 'com.salesforce.automation.SalesforceRandomScenarios_Testcases')
+data.setCell(20, 3, 4320);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyErrormessage')
+data.setCell(21, 2, 'com.salesforce.automation.SalesforceContact_Testcases')
+data.setCell(21, 3, 4232);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'login_Homepage')
+data.setCell(22, 2, 'com.salesforce.automation.SalesforceLoginPage_Testcases')
+data.setCell(22, 3, 4198);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'weeklyrecurranceCalender')
+data.setCell(23, 2, 'com.salesforce.automation.SalesforceRandomScenarios_Testcases')
+data.setCell(23, 3, 4162);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'developerConsole')
+data.setCell(24, 2, 'com.salesforce.automation.SalesforceUserMenu_Testcases')
+data.setCell(24, 3, 4110);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'MyProfile')
+data.setCell(25, 2, 'com.salesforce.automation.SalesforceUserMenu_Testcases')
+data.setCell(25, 3, 3869);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'logoutOption')
+data.setCell(26, 2, 'com.salesforce.automation.SalesforceUserMenu_Testcases')
+data.setCell(26, 3, 3592);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'rememberUser_checkbox')
+data.setCell(27, 2, 'com.salesforce.automation.SalesforceLoginPage_Testcases')
+data.setCell(27, 3, 1978);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'mySettingOption')
+data.setCell(28, 2, 'com.salesforce.automation.SalesforceUserMenu_Testcases')
+data.setCell(28, 3, 1790);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyAccountHolder')
+data.setCell(29, 2, 'com.salesforce.automation.SalesforceRandomScenarios_Testcases')
+data.setCell(29, 3, 1302);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testForgotPasssword')
+data.setCell(30, 2, 'com.salesforce.automation.SalesforceLoginPage_Testcases')
+data.setCell(30, 3, 1102);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'loginPage_EmptyPassword')
+data.setCell(31, 2, 'com.salesforce.automation.SalesforceLoginPage_Testcases')
+data.setCell(31, 3, 958);
+window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-RegressionSuite">
+              </div> <!-- times-div-RegressionSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesforce.automation.SalesforceLoginPage_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Firefox)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginPage_EmptyPassword</span>
+                <span class="method-start">4261 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">5222 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Firefox)</span>
+                <span class="method-start">6067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testForgotPasssword</span>
+                <span class="method-start">9318 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">10421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Firefox)</span>
+                <span class="method-start">11058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginErrorMessage</span>
+                <span class="method-start">14795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">31008 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Firefox)</span>
+                <span class="method-start">31705 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login_Homepage</span>
+                <span class="method-start">35354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">39636 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Firefox)</span>
+                <span class="method-start">40645 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">rememberUser_checkbox</span>
+                <span class="method-start">44397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">46548 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesforce.automation.SalesforceCreateOpty_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">47864 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">OpportunityPipelineReport</span>
+                <span class="method-start">50093 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">61120 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">61251 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">QuarterlySummaryReport</span>
+                <span class="method-start">63301 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">72804 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">72928 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">StuckOpportunitiesReport</span>
+                <span class="method-start">74773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">82972 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">83115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createNewOppty</span>
+                <span class="method-start">85018 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">100372 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">100432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">opportunitiesdropdown</span>
+                <span class="method-start">102212 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">109625 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesforce.automation.SalesforceUserMenu_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">129729 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MyProfile</span>
+                <span class="method-start">133247 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">137206 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">137950 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">developerConsole</span>
+                <span class="method-start">141055 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">145279 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">146203 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">logoutOption</span>
+                <span class="method-start">150871 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">154680 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">155576 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mySettingOption</span>
+                <span class="method-start">159473 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">161646 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">162759 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySelectuserMenu</span>
+                <span class="method-start">166468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">171077 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesforce.automation.SalesforceLeads_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">172053 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Leadstablink</span>
+                <span class="method-start">173761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">180395 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">180514 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">defaultView</span>
+                <span class="method-start">182750 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">201507 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">217252 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">leadsSelectView</span>
+                <span class="method-start">218798 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">225220 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">240426 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyListitemTodaysLeads</span>
+                <span class="method-start">242027 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">250304 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(chrome)</span>
+                <span class="method-start">250430 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewButtonOnLeads</span>
+                <span class="method-start">252137 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">263844 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesforce.automation.SalesforceRandomScenarios_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">264061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">blockingAnEventCalender</span>
+                <span class="method-start">267656 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">272517 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">273392 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyAccountHolder</span>
+                <span class="method-start">276834 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">278364 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">279174 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifylastnameEdit_Variousplace</span>
+                <span class="method-start">282502 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">286914 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">287684 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifytabcustomization</span>
+                <span class="method-start">291156 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">295690 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(firefox)</span>
+                <span class="method-start">296497 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">weeklyrecurranceCalender</span>
+                <span class="method-start">299673 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">303948 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.salesforce.automation.SalesforceContact_Testcases</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Chrome)</span>
+                <span class="method-start">305033 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkCancelButtn_NewView</span>
+                <span class="method-start">306713 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">315011 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Chrome)</span>
+                <span class="method-start">315137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkSaveNewButtn</span>
+                <span class="method-start">318081 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">327100 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Chrome)</span>
+                <span class="method-start">327237 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createNewContact</span>
+                <span class="method-start">329059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">337771 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Chrome)</span>
+                <span class="method-start">337839 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createNewViewContact</span>
+                <span class="method-start">339969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">349038 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Chrome)</span>
+                <span class="method-start">349153 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mycontactsView</span>
+                <span class="method-start">350760 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">358814 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Chrome)</span>
+                <span class="method-start">361314 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">recentContactsView</span>
+                <span class="method-start">363076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">371615 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBeforeMethod(Chrome)</span>
+                <span class="method-start">371787 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyErrormessage</span>
+                <span class="method-start">373681 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownAfterTestMethod</span>
+                <span class="method-start">379526 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

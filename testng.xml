@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite" verbose="3">  <!-- thread-count="5" parallel="tests" -->
+	<listeners>
+		<listener
+			class-name="com.salesforce.utility.SalesforceListenerUtility" />
+	</listeners>
+	<test name="Test_Logins>">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.salesforce.automation.SalesforceLoginPage_Testcases">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Test_Accounts">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.salesforce.automation.SalesforceAccounts_Testcases">
+
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Oppurtunities">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class
+				name="com.salesforce.automation.SalesforceCreateOpty_Testcases">
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="Test_Leads>">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.salesforce.automation.SalesforceLeads_Testcases">
+
+			</class>
+		</classes>
+	</test>
+	<test name="Test_Contacts>">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.salesforce.automation.SalesforceContact_Testcases">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_UserMenu>">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.salesforce.automation.SalesforceUserMenu_Testcases">
+			</class>
+		</classes>
+	</test>
+	<test name="Test_RandomScenarios">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class
+				name="com.salesforce.automation.SalesforceRandomScenarios_Testcases">
+			</class>
+		</classes>
+	</test>
+
+
+
+</suite> <!-- RegressionSuite -->
